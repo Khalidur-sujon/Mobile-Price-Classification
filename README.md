@@ -1,1 +1,6 @@
+   ### Mobile Price Classification
+   
+   
+From my interest in Machine learning, I take different datasets and play with them. This time I take Mobile Price dataset. The goal is to classifie the the price using different specs. 
 
+Now, let me tell you this classification journey. First of all I have imported the necessary library that I need for visualizing and analysis part. After loading the dataset I directly go to the EDA part. Since I have the found the clean dataset, I do not do any kind of feature engineering.  After EDA I have splitted the whole dataset using sklearn train_test_split method. Then I have tried the SVM model. There my train accuracy was 0.96 and test accuracy was 0.86. At this time a question have arised in my mind that Can I increase this accuracy score. For this I have used Feature selection 'mutual_info_classif' technique and select 5 best features for model. After that I have done hyperperameter tuning for SVM. There I have found SVM best score which is 0.95 and also found SVM best parameters. I have also use CV scoring ( score for validation set) where the mean is 0.951. Finaly I have build my final model, train that and  get score . This time my train accuracy was 0.95 and test accuracy was 0.97 which is better than before. 
